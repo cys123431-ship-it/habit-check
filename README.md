@@ -12,7 +12,7 @@ A simple Android habit tracker app built with Kotlin + Jetpack Compose.
 
 ## Repository
 - Main branch: `main`
-- Current tag: `v0.1.0`
+- Current tag: `v0.2.1`
 
 ## Run in Android Studio
 1. Open this folder in Android Studio.
@@ -38,7 +38,7 @@ git push origin v0.1.0
 
 If you have the `gh` CLI, release:
 ```
-gh release create v0.1.0 app/build/outputs/apk/debug/app-debug.apk --title "v0.1.0" --notes "Initial Habit Check release"
+gh release create v0.2.1 app/build/outputs/apk/release/app-release-signed.apk --title "Habit Check v0.2.1" --notes-file RELEASE_NOTES.md
 ```
 
 If you do not have `gh`, use GitHub web and upload the APK from the release screen.
