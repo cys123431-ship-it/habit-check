@@ -13,7 +13,19 @@
 .cxx/
 local.properties
 
+# Local build/runtime artifacts
+/android-sdk/
+/gradle-8.4/
+/gradle-8.4-bin.zip
+/gradle-8.6/
+/gradle-8.6-bin.zip
+/temurin-17/
+/temurin-17.zip
+/cmdline-tools.zip
+/gh-cli/
+/gh-cli.zip
+habitcheck-release.jks
+
 # OS artifacts
 .DS_Store
 Thumbs.db
-
