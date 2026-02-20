@@ -8,7 +8,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.BarChart
+import androidx.compose.material.icons.filled.List
+import androidx.compose.material.icons.filled.InsertChart
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -89,13 +90,13 @@ fun HabitCheckApp() {
                     selected = currentTab == Tab.Today,
                     onClick = { currentTab = Tab.Today },
                     label = { Text(stringResource(id = Tab.Today.titleRes)) },
-                    icon = { Icon(Icons.Default.Add, contentDescription = stringResource(id = Tab.Today.titleRes)) }
+                    icon = { Icon(Icons.Default.List, contentDescription = stringResource(id = Tab.Today.titleRes)) }
                 )
                 NavigationBarItem(
                     selected = currentTab == Tab.Stats,
                     onClick = { currentTab = Tab.Stats },
                     label = { Text(stringResource(id = Tab.Stats.titleRes)) },
-                    icon = { Icon(Icons.Default.BarChart, contentDescription = stringResource(id = Tab.Stats.titleRes)) }
+                    icon = { Icon(Icons.Default.InsertChart, contentDescription = stringResource(id = Tab.Stats.titleRes)) }
                 )
             }
         }
