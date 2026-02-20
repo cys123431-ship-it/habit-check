@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Habit Check</string>
+    <string name="habit_tab_title">Habits</string>
+    <string name="stats_tab_title">Stats</string>
+    <string name="add_habit">Add habit</string>
+    <string name="today_title">Today</string>
+    <string name="overall">Overall</string>
+</resources>
+
