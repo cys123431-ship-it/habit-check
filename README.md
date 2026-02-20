@@ -1,34 +1,44 @@
 ﻿# Habit Check
 
-A simple Android habit tracker app using Kotlin + Jetpack Compose.
+A simple Android habit tracker app built with Kotlin + Jetpack Compose.
 
-## Features
-- Add habit with custom target frequency
-- Mark today\'s completion
-- Delete habits
-- Daily streak and 7-day completion rate
-- Lightweight, clean screen composition
+## What is included
+- Habit add/delete
+- Daily completion toggle
+- Streak and 7-day completion rate stats
+- Home / Stats screen structure
+- Room persistence for habit history
+- README + Gradle project scaffold
 
-## Project structure
-- `app/src/main/java/com/cys123431/habitcheck/` Main application + activity
-- `app/src/main/java/com/cys123431/habitcheck/data/` Room entities, DAO, DB, repository, stats util
-- `app/src/main/java/com/cys123431/habitcheck/ui/` Compose screens and app-level composables
-- `app/src/main/java/com/cys123431/habitcheck/ui/theme/` App theme
-- `app/src/main/res/` Resources
+## Repository
+- Main branch: `main`
+- Current tag: `v0.1.0`
 
-## Run locally
-1. Open project in Android Studio
-2. Install Android SDK + emulator or USB device (Android 8.0+, API 26+)
-3. Run with `app` module
+## Run in Android Studio
+1. Open this folder in Android Studio.
+2. Set minimum SDK to Android 8.0+ (API 26+ is already set).
+3. Run `Debug` on a real device to confirm on-device behavior.
 
-## Build APK
-- Debug: `./gradlew assembleDebug`
-- Release: `./gradlew assembleRelease`
+## Local build
+```
+# from project root
+gradlew.bat assembleDebug
+# or on Linux/macOS
+./gradlew assembleDebug
+```
 
-Generated APK path:
+APK output:
 - `app/build/outputs/apk/debug/app-debug.apk`
-- `app/build/outputs/apk/release/app-release-unsigned.apk`
 
-## Versioning and release
-- Tag releases with semantic version e.g. `v0.1.0`
-- Upload `app-release.apk` in GitHub Release assets after signing as needed
+## GitHub publish (if repo is already created)
+```
+git push -u origin main
+git push origin v0.1.0
+```
+
+If you have the `gh` CLI, release:
+```
+gh release create v0.1.0 app/build/outputs/apk/debug/app-debug.apk --title "v0.1.0" --notes "Initial Habit Check release"
+```
+
+If you do not have `gh`, use GitHub web and upload the APK from the release screen.
